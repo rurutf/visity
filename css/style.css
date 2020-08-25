@@ -70,7 +70,6 @@ body {
     padding: 0 40px;
 }
 a {
-    text-decoration: none;
     transition: all .3s ease;
 }
 
@@ -95,7 +94,7 @@ a {
     align-items: center;
 }
 .header-nav-link {
-    font-family: M;
+    font-family: 'Muli', sans-serif;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -114,7 +113,7 @@ a {
     flex-basis: 18%;
 }
 .tel-btn {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     background-color: var(--green-color);
     font-size: 14px;
     font-weight: bold;
@@ -140,7 +139,6 @@ a {
 ===================*/
 .page-content {
     width: 100%;
-    height: 100vh;
     min-height: 770px;
 }
 /*=====Section title=====*/
@@ -184,6 +182,7 @@ a {
 .btn {
     transform: scale(1);
     transition: all .3s cubic-bezier(.5,.12,.46,.88);
+    margin-left: 110px;
 }
 .btn.hover {
     transform: scale(0);
@@ -199,6 +198,7 @@ a {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
+    color: #fff;
 }
 .element-flower {
     width: 43%;
@@ -224,16 +224,15 @@ a {
 .boxed {
     display: flex;
     justify-content: end;
-    padding-top: 116px;
     margin-bottom: 82px;
 }
-.boxed-title {
+.boxed-title-main {
     flex-basis: 50%;
 }
 .boxed-text{
     flex-basis: 35%;
 }
-.boxed-title-secondary {
+.section__title {
     color: var(--dark-grey-font);
     font-family: 'Muli', sans-serif;
     font-size: 14px;
@@ -242,6 +241,7 @@ a {
     font-style: normal;
     line-height: 24px;
     letter-spacing: 2.8px;
+    padding: 116px 0 12px 0;
 }
 .boxed-title-main {
     color: var(--green-color);
@@ -304,6 +304,7 @@ a {
     font-style: normal;
     line-height: 37px;
     margin-bottom: 16px;
+    text-decoration: none;
 }
 .figure-link-inner:hover {
     color: var(--green-color);
@@ -321,17 +322,227 @@ a {
 .about {
     background-color: var(--green-about-bg);
     margin-top: -140px;
+    padding: 80px 0 150px 0;
+}
+.sheets {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.sheet-img {
+    background-size: auto;
+    background: 30% 34%;
+    transform: translateY(167.9px);
 }
 .font-white {
     color: #fff;
+    padding: 0;
 }
 .boxed-group {
     flex-basis: 42%;
-    padding-top: 24px;
 }
 .boxed-text.bold {
     font-family: 'Georgia', sans-serif;
     font-size: 22px;
     font-weight: bold;
     line-height: 37px;
+}
+
+
+
+
+
+/*=====OUR PROJECTS=====*/
+.project__block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.project__block-img {
+    flex-basis: 58%;
+    width: 100%;
+    height: auto;
+}
+.block-inner {
+    flex-basis: 38%;
+    display: flex;
+    flex-direction: column;
+}
+.block-inner__title {
+    font-family: 'Georgia', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 34px;
+    color: var(--dark-grey-font);
+    margin-bottom: 32px;
+}
+.block-inner__text {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: var(--light-grey-font);
+    margin-bottom: 17px;
+}
+.table__string {
+    display: flex;
+
+}
+.table__string-title {
+    flex-basis: 29%;
+    color: var(--dark-grey-font);
+    font-family: 'Muli', Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 40px;
+}
+.table__string-item {
+    flex-basis: 69%;
+    color: var(--green-color);
+    font-family: 'Muli', Sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+}
+
+
+
+
+
+
+/*=====Sliders=====*/
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+.sliders {
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide__inner {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.swiper-text {
+    order:4;
+    width: 70%;
+    color: var(--dark-grey-font);
+    font-family: 'Georgia', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 37px;
+    margin: 0 auto 51px auto;
+}
+.swiper-source {
+    order: 5;
+    color: var(--green-color);
+    font-family: 'Georgia', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 51px;
+}
+.swiper-country {
+    padding: 12px 0;
+    order: 6;
+    color: var(--dark-grey-font);
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 2.6px;
+}
+.quotes {
+    order: 1;
+    align-self: center;
+    text-align: center;
+    color: rgba(0, 153, 109,0.2);
+    font-family: 'Georgia', sans-serif;
+    font-size: 300px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 341px;
+    margin: 0 0 -233px 0;
+}
+
+
+
+
+
+/*=================
+-------Footer------
+===================*/
+.footer-inner {
+    background: url(../img/footer-bg.jpg) center no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, 
+    border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -600px;
+    padding: 800px 0 122px 0;
+    z-index: 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.boxed-column {
+    display: flex;
+    flex-direction: column;
+}
+.adress-text {
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.7em;
+}
+.adress-text>a {
+    text-decoration: underline;
+}
+.networks {
+    display: flex;
+    flex-direction: column;
+}
+.tel {
+    text-decoration: none;
+    color: #fff;
+
+}
+.tel:hover,  .mail:hover, 
+.networks-link:hover {
+    color: var(--green-color);
+    transition: color .2s linear;
+}
+.networks-link {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
 }
