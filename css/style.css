@@ -342,6 +342,7 @@ a {
 .font-white {
     color: #fff;
     padding: 0;
+    text-decoration: none;
 }
 .boxed-group {
     flex-basis: 42%;
@@ -358,6 +359,9 @@ a {
 
 
 /*=====OUR PROJECTS=====*/
+.projects {
+    margin-bottom: 150px;
+}
 .project__block {
     display: flex;
     justify-content: space-around;
@@ -414,7 +418,9 @@ a {
     font-style: normal;
     line-height: 40px;
 }
-
+.font-black {
+    color: #000;
+}
 
 
 
@@ -521,8 +527,11 @@ body {
     font-style: normal;
     line-height: 1.7em;
 }
-.adress-text>a {
-    text-decoration: underline;
+.mail {
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
 }
 .networks {
     display: flex;
